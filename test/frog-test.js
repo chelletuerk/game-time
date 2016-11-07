@@ -34,10 +34,25 @@ it ('should take the fourth argument and set is as the "height" property of the 
 describe('frog', function() {
 
   it('should have a method called "moveRight()"',
-function() {
-  var frog = new Frog()
-  assert.isFunction(frog.moveRight);
-});
+  function() {
+    var frog = new Frog()
+    assert.isFunction(frog.moveRight);
+  });
+
+  it('should have a method called "moveLeft()"', function () {
+    var frog = new Frog();
+    assert.isFunction(frog.moveLeft)
+  });
+
+  it('should have a method called "moveUp()"', function () {
+    var frog = new Frog();
+    assert.isFunction(frog.moveUp)
+  });
+
+  it('should have a method called "moveDown"', function () {
+    var frog = new Frog();
+    assert.isFunction(frog.moveDown)
+  })
 
 it('"moveRight()" should increment the "x" property by 40',
 function() {
@@ -46,6 +61,27 @@ function() {
   assert.equal(frog.x, 40);
 });
 
+it('"moveLeft()" should decrement the "x" property by 40', function () {
+  var frog = new Frog(80, 0, 40, 40);
+  frog.moveLeft();
+  assert.equal(frog.x, 40);
+})
+
+it('"moveUp()" should decrement the "y" property by 40', function () {
+  var frog = new Frog(80, 80);
+  frog.moveUp();
+  assert.equal(frog.y, 40);
+});
+
+it('"moveDown()" should increment the "y" property by 40', function() {
+  var frog = new Frog(80, 80, 40, 40);
+  frog.moveDown();
+  assert.equal(frog.y, 120)
+})
+
+
+
+
 //BEGINNING OF COLLISION TEST
 xit('has a function that finds top right corner of frog', function() {
   var frog = new Frog(240, 560, 40);
@@ -53,24 +89,6 @@ xit('has a function that finds top right corner of frog', function() {
   assert.equal(frog.x, 280);
   assert.equal(frog.y, 560);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }); //end of describe frog block
