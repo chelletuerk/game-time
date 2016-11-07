@@ -41,8 +41,9 @@ function() {
 
 it('"moveRight()" should increment the "x" property by 40',
 function() {
-  var frog = new Frog(40);
-  assert.equal(frog.x, 80);
+  var frog = new Frog(0, 0, 40, 40);
+  frog.moveRight();
+  assert.equal(frog.x, 40);
 });
 
 //BEGINNING OF COLLISION TEST
