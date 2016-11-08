@@ -1,1 +1,2 @@
-require('./frog-test.js')
+require('./frog-test.js');
+require('./car-test.js');
