@@ -1,7 +1,29 @@
+.canvas-container{
+  width:100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
 canvas {
+  display: inline;
   background: url('images/background.png')
 }
 
 img {
-  margin-left: -999px
+  margin-left: -999px;
+}
+
+.start-screen {
+  background: url('images/start-screen.png');
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-color: turquoise;
+}
+
+.start-button {
+  margin-top: 80vh;
+  margin-right: 70%;
 }
