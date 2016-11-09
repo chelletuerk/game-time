@@ -43,11 +43,11 @@ describe('Cars',function(){
       assert.isFunction(car.driveLeft)
     });
 
-    it('"driveRight()" should increment the "x" property by 1',
+    it('"driveRight()" should increment the "x" property by property of level',
     function() {
       var car = new Cars(0, 0, 40, 40);
       car.driveRight();
-      assert.equal(car.x, 1);
+      assert.equal(car.x, car.speed);
     });
 
     it('"driveLeft()" should decrement the "x" property by 1', function () {
