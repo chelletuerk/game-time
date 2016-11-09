@@ -28,15 +28,6 @@ img {
   visibility: hidden;
 }
 
-#start-button {
- margin-top: 55vh;
- margin-right: 60%;
- font-family: Freckle Face;
- border-radius: 10%;
- width: 150px;
- height: 50px;
- background-color: orange;
-}
 
 #start-screen {
   display: inline-block;
@@ -48,4 +39,64 @@ img {
   margin: auto;
   background-repeat: no-repeat;
   background-color: lightblue;
+  border: none;
+  text-decoration: none;
+  }
+
+#game-over-screen {
+    background-image: url('images/dead-frog.png');
+    position: absolute;
+    top: 0;
+    right: 0
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    margin: 0 33vw;
+    background-repeat: no-repeat;
+    background-color: red;
+    visibility: hidden;
+  }
+
+  #start-button {
+    margin-top: 65%;
+    margin-left: 5%;
+    font-family: Overlock SC;
+    font-size: 30px;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+    background-color: orange;
+    border: none;
+  }
+
+  #restart-button {
+    margin-top: 80%;
+    margin-left: 10%;
+    font-family: Overlock SC;
+    font-size: 30px;
+    color: white;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+
+    background-color: black;
+    border: none;
+  }
+
+  .title {
+    font-family: Monofett;
+    font-size: 60px;
+    margin-left: 48%;
+}
+
+  .instructions {
+    display: inline-block;
+    width: 150px;
+    font-family: Overlock SC;
+    font-size: 22px;
+    margin-left: 40%;
+    margin-bottom: 40%;
+
+
   }
