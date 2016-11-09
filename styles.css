@@ -1,16 +1,31 @@
 
-canvas {
-  display: inline;
-  visibility: hidden;
+body {
+  position: relative;
 }
-
-.game-canvas {
-  display:block;
+canvas {
+  display: inline-block;
+  visibility: hidden;
   margin: auto;
 }
 
+
 img {
   margin-left: -999px;
+}
+
+#win-screen {
+  background-image: url('images/winscreen.png');
+  position: absolute;
+  top: 0;
+  right: 0
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  margin: 0 25vw;
+  background-repeat: no-repeat;
+  background-color: lightblue;
+  visibility: hidden;
 }
 
 #start-button {
@@ -24,6 +39,7 @@ img {
 }
 
 #start-screen {
+  display: inline-block;
   background-image: url('images/start-screen.png');
   display: block;
   margin: auto;
@@ -32,5 +48,4 @@ img {
   margin: auto;
   background-repeat: no-repeat;
   background-color: lightblue;
-  text-align: center;
-}
+  }
