@@ -1,29 +1,36 @@
-.canvas-container{
-  width:100%;
-  text-align: center;
-  margin: 0 auto;
-}
 
 canvas {
   display: inline;
-  background: url('images/background.png')
+  visibility: hidden;
+}
+
+.game-canvas {
+  display:block;
+  margin: auto;
 }
 
 img {
   margin-left: -999px;
 }
 
-.start-screen {
-  background: url('images/start-screen.png');
-  width: 600px;
-  height: 600px;
-  text-align: center;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-color: turquoise;
+#start-button {
+ margin-top: 55vh;
+ margin-right: 60%;
+ font-family: Freckle Face;
+ border-radius: 10%;
+ width: 150px;
+ height: 50px;
+ background-color: orange;
 }
 
-.start-button {
-  margin-top: 80vh;
-  margin-right: 70%;
+#start-screen {
+  background-image: url('images/start-screen.png');
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-color: lightblue;
+  text-align: center;
 }
