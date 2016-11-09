@@ -7,13 +7,24 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <section class='canvas-container'>
-    <canvas id="game"
-      class="game-canvas"
-      width="600"
-      height="600">
-    </canvas>
+
+  <section id='start-screen'>
+    <button id='start-button'>start</button>
+    Use the arrow keys to move Frogger across the road and water! Watch out for cars!
   </section>
+  <canvas id="game"
+  class="game-canvas"
+  width="600"
+  height="600"
+  style='background: url(images/background.png)'>
+  </canvas>
+  <section id='win-screen'>
+    <button id='next-level-button'>Next Level</button>
+    <button id='reload-button'>Restart</button>
+  </section> 
+
+
+
 
 
 <img id='frog' src='images/frugger.png' width="40" height="40">
