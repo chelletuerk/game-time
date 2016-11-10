@@ -4,8 +4,8 @@ var Cars = require('../lib/cars.js');
 describe('Cars',function(){
 
   it('should be a function', function () {
-    assert.isFunction(Cars)
-  })
+    assert.isFunction(Cars);
+  });
   it ('should instantiate Cars', function() {
     var car = new Cars();
     assert.isObject(car);
@@ -34,13 +34,13 @@ describe('Cars',function(){
 
     it('should have a method called "driveRight()"',
     function() {
-      var car = new Cars()
+      var car = new Cars();
       assert.isFunction(car.driveRight);
     });
 
     it('should have a method called "driveLeft()"', function () {
       var car = new Cars();
-      assert.isFunction(car.driveLeft)
+      assert.isFunction(car.driveLeft);
     });
 
     it('"driveRight()" should increment the "x" property by property of level',
