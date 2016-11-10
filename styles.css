@@ -145,3 +145,12 @@ img {
   background-color: magenta;
   border: none;
 }
+
+.winNote {
+  font-family: Overlock SC;
+  font-size: 45px;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  color: white;
+}

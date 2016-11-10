@@ -80,16 +80,5 @@ it('"moveDown()" should increment the "y" property by 40', function() {
 });
 
 
-
-
-//BEGINNING OF COLLISION TEST
-xit('has a function that finds top right corner of frog', function() {
-  var frog = new Frog(240, 560, 40);
-  frog.topRight();
-  assert.equal(frog.x, 280);
-  assert.equal(frog.y, 560);
-});
-
-
 }); //end of describe frog block
 });//end of describe Frog block
