@@ -44,17 +44,17 @@ describe('Cars',function(){
     });
 
     it('"driveRight()" should increment the "x" property by property of level',
-    function() {
-      var car = new Cars(0, 0, 40, 40);
-      car.driveRight();
-      assert.equal(car.x, car.speed);
-    });
+   function() {
+     var car = new Cars(0, 0, 40, 40);
+     car.driveRight();
+     assert.equal(car.x, car.speed);
+   });
 
-    it('"driveLeft()" should decrement the "x" property by 1', function () {
-      var car = new Cars(80, 0, 40, 40);
-      car.driveLeft();
-      assert.equal(car.x, 79);
-    })
+   it('"driveLeft()" should decrement the "x" property by two', function () {
+     var car = new Cars(300, 0, 40, 40);
+     car.driveLeft();
+     assert.equal(car.x, 298);
+   });
 
 
 
