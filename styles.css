@@ -92,6 +92,9 @@ img {
 
   .instructions {
     display: inline-block;
+    position: absolute;
+    right: 15vw;
+    bottom: 55vh;
     width: 150px;
     font-family: Overlock SC;
     font-size: 22px;
