@@ -50,11 +50,12 @@ describe('Cars',function(){
       assert.equal(car.x, car.speed);
     });
 
-    it('"driveLeft()" should decrement the "x" property by 1', function () {
-      var car = new Cars(80, 0, 40, 40);
+    it('"driveLeft()" should decrement the "x" property by two', function () {
+      var car = new Cars(300, 0, 40, 40);
       car.driveLeft();
-      assert.equal(car.x, 79);
+      assert.equal(car.x, 298);
     })
+
 
 
 
