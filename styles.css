@@ -72,7 +72,7 @@ img {
 
   #restart-button {
     margin-top: 80%;
-    margin-left: 10%;
+    margin-left: 65%;
     font-family: Overlock SC;
     font-size: 30px;
     color: white;
@@ -90,16 +90,37 @@ img {
     margin-left: 48%;
 }
 
-  .instructions {
-    display: inline-block;
-    position: absolute;
-    right: 15vw;
-    bottom: 55vh;
-    width: 150px;
+.try-again-note {
+  font-family: Overlock SC;
+  font-size: 45px;
+  /*margin-bottom: 20%;
+  margin-left: 30%;*/
+  position: absolute;
+  left: 55px;
+  bottom: 100px;
+}
+
+#next-level-button {
+    margin-top: 5%;
+    margin-left: 67%;
     font-family: Overlock SC;
-    font-size: 22px;
-    margin-left: 40%;
-    margin-bottom: 40%;
+    font-size: 30px;
+    color: white;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+    position: absolute;
+    border: none;
+}
 
-
-  }
+#reload-button {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: Overlock SC;
+    font-size: 30px;
+    color: white;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+    border: none;
+}
