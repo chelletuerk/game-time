@@ -24,7 +24,7 @@ img {
   left: 0;
   width: 600px;
   height: 600px;
-  margin: 0 25vw;
+  margin: 0 34vw;
   background-repeat: no-repeat;
   background-color: darkblue;
   visibility: hidden;
@@ -54,7 +54,7 @@ img {
     left: 0;
     width: 600px;
     height: 600px;
-    margin: 0 26vw;
+    margin: 0 34vw;
     background-repeat: no-repeat;
     background-color: red;
     visibility: hidden;
@@ -144,4 +144,13 @@ img {
 #reload-button:hover {
   background-color: magenta;
   border: none;
+}
+
+.winNote {
+  font-family: Overlock SC;
+  font-size: 45px;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  color: white;
 }

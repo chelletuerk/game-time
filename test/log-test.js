@@ -4,8 +4,8 @@ var Logs = require('../lib/logs.js');
 describe('Logs',function(){
 
   it('should be a function', function () {
-    assert.isFunction(Logs)
-  })
+    assert.isFunction(Logs);
+  });
   it ('should instantiate Logs', function() {
     var log = new Logs();
     assert.isObject(log);
@@ -34,7 +34,7 @@ describe('Logs',function(){
 
     it('should have a method called "floatRight()"',
     function() {
-      var log = new Logs()
+      var log = new Logs();
       assert.isFunction(log.floatRight);
     });
 

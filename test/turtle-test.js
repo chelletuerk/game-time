@@ -4,8 +4,8 @@ var Turtles = require('../lib/turtles.js');
 describe('Turtles',function(){
 
   it('should be a function', function () {
-    assert.isFunction(Turtles)
-  })
+    assert.isFunction(Turtles);
+  });
   it ('should instantiate Turtles', function() {
     var turtle = new Turtles();
     assert.isObject(turtle);
@@ -34,7 +34,7 @@ describe('Turtles',function(){
 
     it('should have a method called "swimLeft()"',
     function() {
-      var turtle = new Turtles()
+      var turtle = new Turtles();
       assert.isFunction(turtle.swimLeft);
     });
 
