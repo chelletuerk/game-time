@@ -1,6 +1,8 @@
 
 body {
   position: relative;
+    background: url('images/window-background.png');
+    background-size: cover;
 }
 canvas {
   display: inline-block;
@@ -52,7 +54,7 @@ img {
     left: 0;
     width: 600px;
     height: 600px;
-    margin: 0 25vw;
+    margin: 0 26vw;
     background-repeat: no-repeat;
     background-color: red;
     visibility: hidden;
@@ -70,6 +72,11 @@ img {
     border: none;
   }
 
+  #start-button:hover {
+    background-color: magenta;
+    border: none;
+  }
+
   #restart-button {
     margin-top: 80%;
     margin-left: 65%;
@@ -79,22 +86,26 @@ img {
     border-radius: 10vh;
     width: 170px;
     height: 70px;
-
     background-color: black;
     border: none;
   }
 
-  .title {
+  #restart-button:hover {
+    background-color: darkblue;
+    color: white;
+    border: none;
+  }
+
+.title {
     font-family: Monofett;
     font-size: 60px;
     margin-left: 48%;
+    margin-top: 0
 }
 
 .try-again-note {
   font-family: Overlock SC;
   font-size: 45px;
-  /*margin-bottom: 20%;
-  margin-left: 30%;*/
   position: absolute;
   left: 55px;
   bottom: 100px;
@@ -113,6 +124,11 @@ img {
     border: none;
 }
 
+#next-level-button:hover{
+  background-color: magenta;
+  border: none;
+}
+
 #reload-button {
     margin-top: 5%;
     margin-left: 5%;
@@ -123,4 +139,9 @@ img {
     width: 170px;
     height: 70px;
     border: none;
+}
+
+#reload-button:hover {
+  background-color: magenta;
+  border: none;
 }
